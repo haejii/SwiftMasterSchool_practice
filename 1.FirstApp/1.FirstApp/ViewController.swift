@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func MainButton(_ sender: Any) {
+        MainLabel.text = "안녕하세요."
         print("aaaaa")
     }
     
