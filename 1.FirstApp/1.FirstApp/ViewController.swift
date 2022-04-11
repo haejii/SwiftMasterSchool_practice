@@ -8,24 +8,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var MainLabel: UILabel!
-
+    
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var myButton: UIButton!
+    
     var flag = true
     
+    // 앱의 화면에 들어오면 처음 실행시키는 함수
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-    @IBAction func MainButton(_ sender: Any) {
+    @IBAction func buttonPressed(_ sender: Any) {
         if flag == true {
-            MainLabel.text = "반갑습니다."
-            MainLabel.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+            mainLabel.text = "반갑습니다."
+            mainLabel.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+            myButton.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+            myButton.setTitleColor(UIColor.black, for: .normal)
             self.flag = false
-        }else {
-            MainLabel.text = "안녕하세요."
-            MainLabel.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        } else {
+            mainLabel.text = "안녕하세요."
+            mainLabel.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            myButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
             self.flag = true
         }
     }

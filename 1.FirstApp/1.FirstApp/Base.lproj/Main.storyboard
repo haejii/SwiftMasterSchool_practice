@@ -28,7 +28,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="버튼"/>
                                 <connections>
-                                    <action selector="MainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J81-Tq-4pd"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4K5-lu-bzZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-Cu-U04">
@@ -52,7 +52,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="MainLabel" destination="xUf-Cu-U04" id="RCm-SB-9vQ"/>
+                        <outlet property="mainLabel" destination="xUf-Cu-U04" id="4ai-Pt-kWz"/>
+                        <outlet property="myButton" destination="JcY-tf-U6f" id="YFN-6a-PRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
