@@ -10,7 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var MainLabel: UILabel!
-    @IBOutlet weak var MainButton: UIButton!
+
+    var flag = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +19,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func MainButton(_ sender: Any) {
-        MainLabel.text = "안녕하세요."
-        print("aaaaa")
+        if flag == true {
+            MainLabel.text = "반갑습니다."
+            MainLabel.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+            self.flag = false
+        }else {
+            MainLabel.text = "안녕하세요."
+            MainLabel.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            self.flag = true
+        }
     }
     
 }

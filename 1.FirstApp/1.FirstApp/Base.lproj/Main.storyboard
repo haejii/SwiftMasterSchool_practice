@@ -17,28 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcY-tf-U6f">
-                                <rect key="frame" x="177" y="578" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcY-tf-U6f">
+                                <rect key="frame" x="147" y="732" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tga-Yp-V0w"/>
+                                    <constraint firstAttribute="width" constant="120" id="ofW-nI-6dV"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="버튼"/>
                                 <connections>
                                     <action selector="MainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J81-Tq-4pd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="반갑습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-Cu-U04">
-                                <rect key="frame" x="137" y="204" width="141" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-Cu-U04">
+                                <rect key="frame" x="107" y="244" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="LtE-bY-u3Q"/>
+                                    <constraint firstAttribute="width" constant="200" id="agR-3o-bCv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JcY-tf-U6f" secondAttribute="bottom" constant="100" id="QIj-vn-ICP"/>
+                            <constraint firstItem="xUf-Cu-U04" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VJv-Fh-boF"/>
+                            <constraint firstItem="JcY-tf-U6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3I-uB-vkp"/>
+                            <constraint firstItem="xUf-Cu-U04" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="seq-c9-cUf"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="MainButton" destination="JcY-tf-U6f" id="pUl-9Y-qK9"/>
                         <outlet property="MainLabel" destination="xUf-Cu-U04" id="RCm-SB-9vQ"/>
                     </connections>
                 </viewController>
@@ -50,6 +63,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
