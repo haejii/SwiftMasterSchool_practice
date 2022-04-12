@@ -50,6 +50,9 @@
                                 <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ROLL"/>
+                                <connections>
+                                    <action selector="onClickRollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khh-75-5U4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +68,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zx6-nh-QTz" secondAttribute="trailing" constant="20" id="xIm-1d-VJa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diceOne" destination="Nw5-Uf-NRF" id="9oB-am-Syl"/>
+                        <outlet property="diceTwo" destination="6fA-h1-k10" id="tcN-VZ-PrA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
