@@ -105,7 +105,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="가위">
                                                     <attributes>
-                                                        <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Bold"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                         <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
@@ -125,7 +125,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="바위">
                                                     <attributes>
-                                                        <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Bold"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                         <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
@@ -145,7 +145,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="보">
                                                     <attributes>
-                                                        <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Bold"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                         <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>

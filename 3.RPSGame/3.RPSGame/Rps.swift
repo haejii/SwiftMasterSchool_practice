@@ -8,8 +8,8 @@
 import Foundation
 
 enum RPS: Int {
-    case rock = 1
-    case scissors = 2
-    case paper = 3
+    case rock = 0
+    case scissors = 1
+    case paper = 2
     
 }
